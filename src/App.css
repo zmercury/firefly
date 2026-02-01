@@ -1,7 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 @import "tailwindcss";
-
-@plugin "tailwindcss-animate";
 @import "tw-animate-css";
+@plugin "tailwindcss-animate";
 
 @custom-variant dark (&:is(.dark *));
 
@@ -115,11 +115,17 @@
   --sidebar-ring: oklch(0.556 0 0);
 }
 
+@theme inline {
+  --font-montserrat: "Montserrat", sans-serif;
+
+  --radius-sm: calc(var(--radius) - 4px);
+}
+
 @layer base {
   * {
     @apply border-border outline-ring/50;
   }
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-montserrat;
   }
 }
