@@ -13,7 +13,7 @@ function MainLayout() {
     <div className="min-h-screen flex flex-col bg-background">
       {/* <Navbar navigationData={navData} /> */}
 
-      <main className="flex-1 p-4">
+      <main>
         <Outlet />
       </main>
 
