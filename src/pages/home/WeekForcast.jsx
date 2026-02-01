@@ -1,4 +1,4 @@
-export default function DayForcast() {
+export default function WeekForcast() {
   return (
     <div className="flex gap-8 mt-16 justify-center">
       <div className="flex flex-col gap-1 justify-center items-center border-2 border-accent-foreground/20 rounded-lg px-4 py-4 w-36">
